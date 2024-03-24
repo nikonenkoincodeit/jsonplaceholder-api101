@@ -39,7 +39,7 @@ module.exports = {
     ],
   },
   devServer: {
-    port: 8080,
+    port: 8081,
     // proxy: {
     //   "**/api/**": {
     //     target: "http://web/api/index.php",

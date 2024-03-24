@@ -2,6 +2,7 @@ import { getData } from "../service";
 import { createUsersTable } from "../markup";
 import { tbodyEl } from "../refs";
 import { addMarkup } from "../helpers";
+
 function init() {
   getData("users")
     .then((data) => {
@@ -20,3 +21,5 @@ function onClick(e) {
   // console.log(trEl.dataset.userid);
 }
 tbodyEl.addEventListener("click", onClick);
+
+console.log(123);
