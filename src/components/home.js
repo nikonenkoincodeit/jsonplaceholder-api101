@@ -13,4 +13,10 @@ function init() {
     });
 }
 init();
-console.log(1, 2, 3);
+function onClick(e) {
+  const trEl = e.target.closest("[data-userid]");
+
+  location.href = "./user.html?id=" + trEl.dataset.userid;
+  // console.log(trEl.dataset.userid);
+}
+tbodyEl.addEventListener("click", onClick);
